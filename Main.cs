@@ -20,14 +20,6 @@ namespace POVChanger
 
         public override void OnUpdate()
         {
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                foreach (var oodListener in Object.FindObjectsOfType<AudioListener>())
-                    Console.WriteLine(oodListener.name);
-
-                Console.WriteLine(Camera.main.name);
-            }
-
             if (Input.GetKey(KeyCode.LeftControl))
             {
                 if (Input.GetKeyDown(KeyCode.Alpha5))
