@@ -44,7 +44,7 @@ namespace POVChanger
                             .GetBoneTransform(HumanBodyBones.Head).FindChild("HmdPivot").gameObject
                             .AddComponent<Camera>();
                         _PlayerCam.fieldOfView = 90;
-                        _PlayerCam.nearClipPlane = 0.1f;
+                        _PlayerCam.nearClipPlane = 0.01f;
                         _PlayerCam.enabled = true;
                         _Neck = ply.transform.Find("ForwardDirection/Avatar").GetComponent<Animator>()
                             .GetBoneTransform(HumanBodyBones.Neck);
